@@ -8,11 +8,12 @@
 <script>
 export default {
   data () {
-    return {}
+    return {
+      form: {}
+    }
   }
 }
 </script>
 
 <style scoped>
-
 </style>

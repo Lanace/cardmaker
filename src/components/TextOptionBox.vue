@@ -1,7 +1,8 @@
 <template>
   <section>
     <div>
-      <label for="">텍스트</label>
+      <label for="font-text-input">텍스트</label>
+      <input id="font-text-input" type="text">
     </div>
 
     <div>
@@ -9,7 +10,8 @@
     </div>
 
     <div>
-      <label for="">색상</label>
+      <label for="font-color-input">색상</label>
+      <input id="font-color-input" type="color" name="color" value="#e66465" />
     </div>
 
     <div>
@@ -17,7 +19,8 @@
     </div>
 
     <div>
-      <label for="">크기</label>
+      <label for="font-size-input">크기</label>
+      <input id="font-size-input" type="range">
     </div>
 
     <div>
