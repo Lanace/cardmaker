@@ -49,7 +49,13 @@ module.exports = {
       {
         test: /\.js$/,
         loader: 'babel-loader',
-        include: [resolve('src'), resolve('test'), resolve('node_modules/webpack-dev-server/client')]
+        include: [
+          path.resolve(__dirname, "src"),
+          resolve('src'), 
+          resolve('test'), 
+          resolve('node_modules/webpack-dev-server/client'),
+          resolve("bootstrap-vue")
+        ]
       },
       {
         test: /\.(png|jpe?g|gif|svg)(\?.*)?$/,
