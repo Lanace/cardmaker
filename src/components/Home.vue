@@ -1,8 +1,10 @@
 <template>
-  <section>
-    <preview></preview>
-    <image-option-box></image-option-box>
-    <text-option-box></text-option-box>
+  <section id="home-section">
+    <preview id="priview-section"></preview>
+    <div>
+      <image-option-box></image-option-box>
+      <text-option-box></text-option-box>
+    </div>
   </section>
 </template>
 
@@ -20,5 +22,14 @@ export default {
 </script>
 
 <style scoped>
+
+#home-section {
+  display: flex;
+  flex-direction: row;
+}
+
+#priview-section {
+  flex-grow: 1;
+}
 
 </style>

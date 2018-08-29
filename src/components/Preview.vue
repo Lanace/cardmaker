@@ -2,7 +2,9 @@
   <section>
     <h2>Preview</h2>
     <input id="file-input" type="file" v-on:change="fileLoad"/>
-    <canvas id="canvas"></canvas>
+    <div id="canvas-area">
+      <canvas id="canvas"></canvas>
+    </div>
   </section>
 </template>
 
@@ -34,11 +36,15 @@ export default {
       canvas.height = this.img.height
       var ctx = canvas.getContext('2d')
       ctx.drawImage(this.img, 0, 0)
-      alert(canvas.toDataURL('image/png'))
     }
   }
 }
 </script>
 
 <style scoped>
+
+#canvas-area {
+  overflow: scroll;
+}
+
 </style>
