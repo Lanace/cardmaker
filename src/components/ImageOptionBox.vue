@@ -48,13 +48,6 @@
   </section>
 </template>
 
-<!-- Either include the full CamanJS code including plugins -->
-<script type="text/javascript" src="caman.full.min.js"></script>
-
-<!-- Or include the core library and some plugins/filters -->
-<script type="text/javascript" src="caman.min.js"></script>
-<script type="text/javascript" src="plugins/myplugin.js"></script>
-
 <script>
 var imageOption = {}
 
